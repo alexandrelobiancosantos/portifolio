@@ -142,6 +142,7 @@ h1{
     text-transform: capitalize;
 }
 p{
+    text-align: justify;
     display: block;
     width: 90%;
     font-size: 1.2em;
