@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+        integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="css/style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portifolio Website With Typing Effect</title>
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <nav>
+                <div class="logo">folio<b>.</b></div>
+                <ul class="navItems">
+                    <li><a href="#">home</a></li>
+                    <li><a href="#">about</a></li>
+                    <li><a href="#">skills</a></li>
+                    <li><a href="#">blog</a></li>
+                </ul>
+                <div class="links">
+
+                    <!--a href="#"><i class="fab fa-html5"></i></a>
+                    <a href="#"><i class="fab fa-css3-alt"></i></a>
+                    <a href="#"><i class="fab fa-js"></i></a>
+                    <a href="#"><i class="fab fa-python"></i></a>
+                    <a href="#"><i class="fab fa-aws"></i></a>
+                    <a href="#"><i class="fab fa-docker"></i></a>
+                    <a href="#"><i class="fab fa-raspberry-pi"></i></a-->
+                    <a href="#"><i class="fab fa-linkedin"></i></a>
+                    <a href="#"><i class="fab fa-github"></i></a>
+                </div>
+            </nav>
+        </div>
+    </header>
+    <div class="wrapper">
+        <div class="cols cols0">
+            <span class="topline">Hello</span>
+            <h1>I'm <span class="multiText"></span></h1>
+            <P>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Distinctio iusto assumenda quam, aspernatur
+                doloremque dolores veritatis, nihil eveniet sapiente at non omnis, molestiae id cum amet in corporis.
+                Distinctio, illum?</P>
+            <div class="btns">
+                <button>download CV</button>
+                <button>hire me</button>
+            </div>
+        </div>
+        <div class="menu">
+            <div class="toggle"><i class="fab fa-plus"></i></div>
+            <li style="--i:0;"><a href="#"><i class="fab fa-html5"></i></a></li>
+            <li style="--i:1;"><a href="#"><i class="fab fa-css3-alt"></i></a></li>
+            <li style="--i:2;"><a href="#"><i class="fab fa-js"></i></a></li>
+            <li style="--i:3;"><a href="#"><i class="fab fa-python"></i></a></li>
+            <li style="--i:4;"><a href="#"><i class="fab fa-aws"></i></a></li>
+            <li style="--i:5;"><a href="#"><i class="fab fa-docker"></i></a></li>
+            <li style="--i:6;"><a href="#"><i class="fab fa-raspberry-pi"></i></a></li>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <script>
+        var typingEffect = new Typed(".multiText", {
+            strings: ["developer", "operator", "devops"],
+            loop: true,
+            typeSpeed: 100,
+            backSpeed: 100,
+            backDelay: 1500
+        })
+    </script>
+    <script>
+        let toggle = document.querySelector('.toggle');
+        let menu = document.querySelector('.menu');
+        toggle.onclick = function () {
+            menu.classList.toggle('active')
+        }
+    </script>
+</body>
+
+</html>
