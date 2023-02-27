@@ -203,12 +203,11 @@ button:hover{
     transform: rotate(calc(360deg / -7 * var(--i)));
     font-size: 1.5em;
     box-shadow: 0 3px 4px rgba(0,0,0,0.15);
-    color: #7f00ff;
+    color: #3d535f;
 }
 
 .menu.active li{
     transform: rotate(calc(360deg / 7 * var(--i)));
-    color: #7f00ff;
     left: 10px;
 }
 
